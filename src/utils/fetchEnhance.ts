@@ -14,7 +14,7 @@ export async function fetchMJPost(url = '', data = {}) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "mj-api-secret": import.meta.env.VITE_MIDJOURNEY_PROXY_API_SECRET??'',
+       // "mj-api-secret2": import.meta.env.VITE_MIDJOURNEY_PROXY_API_SECRET??'',
       },
       body: JSON.stringify(data),
     });
@@ -27,7 +27,7 @@ export async function fetchMJGet(url = '') {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        "mj-api-secret": import.meta.env.VITE_MIDJOURNEY_PROXY_API_SECRET ?? "",
+       // "mj-api-secret": import.meta.env.VITE_MIDJOURNEY_PROXY_API_SECRET ?? "",
       },
     });
     if (!response.ok) {
